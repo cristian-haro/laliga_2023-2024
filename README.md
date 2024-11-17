@@ -8,6 +8,15 @@
 
 Project developed with a scrapper made in python, with the extraction of data from a website, transformation and treatment of the data in an Excel and dumping of the same in MySQL. Data exploitation carried out in Power BI, with detail in design and visualization of the data.
 
+### Process developed with Talend
 ![Talend](Imágenes/Talend.PNG)
 
+### Presentation of data in Power BI
+
 > Fictitious data have been used in the project
+
+[![View the report](https://img.shields.io/badge/View_the_report-0078D4?style=for-the-badge)](https://app.powerbi.com/view?r=eyJrIjoiMWYzYjQ4ZmItMjhjMC00YTk1LThmYzQtMWNlYTEzMDI2YmI2IiwidCI6IjJmNjE1YzI1LTEzNWItNDFjZC04MDhiLTVmY2U1YmQ5NjBjNCIsImMiOjl9&pageName=ReportSection12e006d364ab605445ec)
+
+
+
+
