@@ -1,0 +1,469 @@
+Apuntes sobre los diferentes ficheros:
+
+-------------------------------------------------------
+Estadisticas Jugadores Generales
+-------------------------------------------------------
+
+Tiempo Jugado
+    PJ -- Partidos jugados por el jugador o el equipo
+    Titular -- Partido o partidos iniciados por el jugador
+    90 s -- 90s jugados
+    Minutos jugados divididos por 90
+Rendimiento
+    Gls. -- Goles marcados o permitidos
+    Ass -- Asistencias
+    G-TP -- Goles sin penalización
+    TP -- Tiros penales ejecutados
+    TPint -- Tiros penales intentados
+    TA -- Tarjetas amarillas
+    TR -- Tarjetas rojas
+Por 90 Minutos
+    Gls. -- Goles marcados por 90 minutos
+    Ast -- Asistencias por 90 minutos
+    G+A -- Goles y asistencias por 90 minutos
+    G-TP -- Goles menos penales ejecutados por cada 90 minutos
+    G+A-TP -- Goles más asistencias menos tiros de penales ejecutados por 90 minutos
+    
+Expectativa
+    xG -- Goles esperados
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+    npxG -- Goles esperados sin penalidad
+    xA -- xG asistidos
+    xG que se obtienen con un pase de asistencia.
+    npxG+xA -- Goles esperados sin penalización más xG asistidos
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+Por 90 Minutos
+    xG -- Goles esperados por 90 minutos
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).  
+    xA -- xG asistidos por 90 minutos 
+    xG+xA -- Goles esperados más asistencia por cada 90 minutos
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario). 
+    npxG -- Goles esperados sin penalidad por cada 90 minutos  
+    npxG+xA -- Goles esperados sin penalización más xG asistidos por 90 minutos
+
+-------------------------------------------------------
+Estadisticas Jugadores Creacion de goles y tiros
+-------------------------------------------------------
+
+Tiempo Jugado
+    90 s -- 90s jugados
+        Minutos jugados divididos por 90
+ACT
+    ACT -- Acciones para la creación de tiros
+        Las dos acciones ofensivas que conducen directamente a un tiro, como los pases, los regates y las faltas de empate. Nota: Un solo jugador puede recibir crédito por múltiples acciones y el ejecutor del tiro también puede recibir crédito.
+    SCA90 -- Acciones de creación de tiro por 90 minutos.
+        
+Tipos de SCA
+    PasesVivos -- Pases completos de balón vivo que conducen a un intento de tiro.
+    PasesMuertos -- Pases completos de balón muerto que conducen a un intento de tiro.
+    Incluye tiros libres, saques de esquina, saques de salida, saques de banda y saques de meta.
+    Reg. -- Regates exitosos que conducen a un intento de tiro.
+    Dis -- Tiros que conducen a otro intento de tiro.
+    FR -- Las faltas cometidas que provocan un intento de tiro.
+    Def -- Acciones defensivas que producen un intento de tiro
+ACG
+    ACG -- Acciones para la creación de goles
+        Las dos acciones ofensivas que conducen directamente a un gol, como los pases, los regates y las faltas de empate. Nota: Un solo jugador puede recibir crédito por múltiples acciones y el ejecutor también puede recibir crédito.
+    GCA90 -- Acciones de creación de goles por 90 minutos.
+        
+Tipos de GCA
+    PasesVivos -- Pases de balón vivo completados que conducen a un gol.
+    PasesMuertos -- Pases completos a balón parado que conducen a un gol. Incluye tiros libres, saques de esquina, saques de salida, saques de banda y saques de meta.
+    Reg. -- Regates exitosos que conducen a un gol.
+    Dis -- Tiros que conducen a otro tiro de gol.
+    FR -- Las faltas cometidas que conducen a un gol.
+    Def -- Acciones defensivas que conducen a un gol
+
+-------------------------------------------------------
+Estadisticas Jugadores Defensivo
+-------------------------------------------------------
+
+Tiempo Jugado
+    90 s -- 90s jugados
+    Minutos jugados divididos por 90
+Derribos
+    Tkl -- Número de jugadores tackleados
+    TklG -- Tackleos que le dieron la posesión del balón al equipo que lo realizó.
+    3.º def. -- Entradas en la defensa 1/3
+    3.º cent. -- Entradas en el centro 1/3
+    3.º ataq. -- Entradas en el ataque 1/3
+contra dribles
+    Tkl -- Número de dribladores tackleados
+    Int. -- Número de veces que se ha driblado más número de tackles
+    Tkl% -- Porcentaje de dribladores tackleados
+        Los dribladores tackleados divididos por los dribladores tackleados más las veces que han pasado.
+        Se requiere un mínimo de 0,625 regateadores disputados por partido de equipo para calificar como líder.
+    Pasado -- Número de veces que un jugador contrario ha pasado por delante de un drible.
+Presiones
+    Presión -- Número de veces que se aplica presión al jugador contrario que está recibiendo, llevando o soltando la pelota.
+    Con éxito -- Número de veces que el equipo ganó la posesión con cinco segundos de aplicación de presión.
+    % -- Porcentaje de presión exitoso
+        Porcentaje de tiempo en que el equipo ganó la posesión con cinco segundos de aplicación de presión.
+        Se requiere un mínimo de 6,44 presiones por partido de equipo para calificar como líder.
+    3.º def. -- Número de veces que se aplica presión al jugador contrario que recibe, lleva o suelta el balón, en la defensa 1/3.
+    3.º cent. -- Número de veces que se aplica presión al jugador contrario que recibe, lleva o suelta el balón, en el centro 1/3.
+    3.º ataq. -- Número de veces que se aplica presión al jugador contrario que recibe, lleva o suelta el balón, en el ataque 1/3.
+Bloqueos
+    Bloqueos -- El número de veces que se bloquea el balón poniéndose en su camino.
+    Dis -- El número de veces que se bloquea un tiro al pararse en su camino.
+    ShSv -- Número de veces que se bloquea un tiro que estaba en el blanco, al pararse en su camino.
+    Pases -- El número de veces que se bloquea un pase por pararse en su camino.
+    Int -- Intercepciones
+    Tkl+Int -- Número de jugadores tackleados más número de intercepciones
+    Desp. -- Despeje
+    Err -- Errores que provocan el tiro de un oponente.
+
+-------------------------------------------------------
+Estadisticas Jugadores Pases
+-------------------------------------------------------
+
+Total
+    Cmp -- Pases completados
+    Int. -- Pases intentados
+    % Cmp -- Porcentaje de cumplimiento de pases
+    Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    Dist. tot. -- La distancia total, en yardas, que han recorrido los pases completados en cualquier dirección
+    Dist. prg. -- Distancia progresiva
+        La distancia total, en yardas, que han recorrido los pases completados hacia la meta del oponente. Nota: Los pases alejados de la meta del oponente se cuentan como cero yardas progresivas.
+Cortos
+    Cmp -- Pases completados
+        Pases entre 5 y 15 yardas
+    Int. -- Pases intentados
+        Pases entre 5 y 15 yardas
+    % Cmp -- Porcentaje de cumplimiento de pases
+        Pases entre 5 y 15 yardas
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+Medios
+    Cmp -- Pases completados
+        Pases entre 15 y 30 yardas
+    Int. -- Pases intentados
+        Pases entre 15 y 30 yardas
+    % Cmp -- Porcentaje de cumplimiento de pases
+        Pases entre 15 y 30 yardas
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+Largos
+    Cmp -- Pases completados
+        Pases de más de 30 yardas
+    Int. -- Pases intentados
+        Pases de más de 30 yardas
+    % Cmp -- Porcentaje de cumplimiento de pases
+        Pases de más de 30 yardas
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+Rendimiento
+    Ass -- Asistencias
+Expectativa
+    xA -- xG asistidos
+    xG que se obtienen con un pase de asistencia.
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    A-xA -- Asistencias menos xG asistidos
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    PC -- Pases que conducen directamente a un tiro (tiro asistido).
+    1/3 -- Pases completados que entran en el último tercio del área más cercana a la portería.
+        No incluye jugada a balón parado
+    PPA -- Pases completados en el área de 18 yardas
+        No incluye jugada a balón parado
+    CrAP -- Cruces completados en la zona de las 18 yardas
+        No incluye jugada a balón parado
+    Prog -- Pases progresivos
+        Pases completos que mueven el balón hacia la portería contraria al menos a 10 metros de su punto más lejano en los últimos seis pases, 
+        o pases completos al área de penalización. Excluye los pases del 40 % del campo de juego defensivo.
+
+-------------------------------------------------------
+Estadisticas Jugadores Porteros Avanzado
+-------------------------------------------------------
+
+Rendimiento
+    GC -- Goles en contra
+Tiros penales
+    PD -- Penales concedidos
+Goles
+    TL -- Goles de tiro libre en contra
+    TE -- Goles de tiro de esquina en contra
+    GC -- Goles propios marcados contra el portero
+Expectativa
+    PSxG -- Goles esperados posteriores al tiro
+    PSxG son los goles esperados basados en la probabilidad que tiene el portero de salvar el tiro.
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    PSxG/SoT -- Goles esperados posteriores al tiro por tiros en el arco
+        No incluye los tiros penales
+        PSxG son los goles esperados basados en la probabilidad que tiene el portero de salvar el tiro.
+        Los números más altos indican que los disparos son más difíciles de detener y es más probable que anoten.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    PSxG+/- -- Goles esperados posteriores al tiro menos goles permitidos
+        Los números positivos sugieren una mejor suerte o una capacidad superior al promedio para detener los disparos
+        PSxG son los goles esperados basados en la probabilidad que tiene el portero de salvar el tiro.
+        Nota: No incluye los goles propios.
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    /90 -- Goles esperados posteriores al tiro menos goles permitidos por 90 minutos
+        Los números positivos sugieren una mejor suerte o una capacidad superior al promedio para detener los disparos
+        PSxG son los goles esperados basados en la probabilidad que tiene el portero de salvar el tiro.
+        Nota: No incluye los goles propios.
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+Iniciado
+    Cmp -- Pases completados
+        Pases de más de 40 yardas
+    Int. -- Pases intentados
+        Pases de más de 40 yardas
+    % Cmp -- Porcentaje de cumplimiento de pases
+        Pases de más de 40 yardas
+Pases
+    Int. -- Pases intentados
+        Sin incluir los saques de meta
+    TI -- Tiros intentados
+    %deLanzamientos -- Porcentaje de pases que fueron realizados
+        Sin incluir los saques de meta
+        Pases de más de 40 yardas
+    Long. prom. -- Longitud media de los pases, en yardas
+        Sin incluir los saques de meta
+Saques de meta
+    Int. -- Tiros a puerta intentados
+    %deLanzamientos -- Porcentaje de saques de meta que fueron realizados
+        Pases de más de 40 yardas
+    Long. prom. -- Longitud media de los tiros al arco, en yardas
+Pases cruzados
+    Opp -- Intentos del oponente de cruzar al área de penal
+    Stp -- Número de centros en el área penal que fueron frenados con éxito por el arquero
+    % de Stp -- Porcentaje de centros en el área de penal que fueron frenados con éxito por el arquero
+Barredora
+    Núm. de OPA -- Núm. de acciones defensivas fuera del área de penal
+    Núm. de OPA/90 -- Acciones defensivas fuera del área de penal por 90 minutos
+    DistProm. -- Distancia promedio desde la meta (en yardas) de todas las acciones defensivas
+
+-------------------------------------------------------
+Estadisticas Jugadores Porteros
+-------------------------------------------------------
+
+Tiempo Jugado
+    PJ -- Partidos jugados por el jugador o el equipo
+    Titular -- Partido o partidos iniciados por el jugador
+    90 s -- 90s jugados
+        Minutos jugados divididos por 90
+Rendimiento
+    GC -- Goles en contra
+    GC90 -- Goles en contra por 90 minutos
+    DaPC -- Disparos a puerta en contra
+    % Salvadas -- Porcentaje de salvadas
+        (Disparos a puerta en contra - Goles en contra)/Disparos a puerta en contra
+            Ten en cuenta que no todos los disparos a puerta son tapados por el portero, algunos pueden ser tapados por los defensores
+            No incluye los tiros penales
+    PG -- Partidos Ganados
+    PE -- Partidos Empatados
+    PP -- Partidos Perdidos
+Rendimiento
+    PaC -- Portería a cero
+        Partidos completos del portero en los que no se permitieron goles.
+    PaC% -- Porcentaje de portería a cero
+        Porcentaje de partidos que dan como resultado una portería a cero.
+    TPint -- Tiros penales intentados
+Tiros penales
+    PD -- Penales concedidos
+    PD -- Penales detenidos
+    PC -- Tiros penales fallidos
+    % Salvadas -- Porcentaje de penales salvados
+        Goles en contra/Intentos de penales
+        No se incluyen los tiros de penales que no aciertan
+
+-------------------------------------------------------
+Estadisticas Jugadores Posesion
+-------------------------------------------------------
+
+Toques
+    Toques -- El número de veces que un jugador tocó el balón. Nota: Recibir un pase, luego driblar, y luego enviar un pase cuenta como un toque.
+    Def. pen. -- Toques en el área defensiva del penal
+    3.º def. -- Toques en la defensiva 1/3
+    3.º cent. -- Toques en el centro 1/3
+    3.º ataq. -- Toques en el ataque 1/3
+    Ataq. pen. -- Toques en el área penal de ataque
+    Balón vivo -- Toques de balón vivo. No incluye saques de esquina, tiros libres, saques de banda, saques de salida, saques de meta o penales.
+Dribles
+    Con éxito -- Dribles completados con éxito
+    Int. -- Intentos de driblar
+    % de éxito -- Porcentaje de dribles completados con éxito
+        Se requiere un mínimo de 0,5 regates por partido de equipo para calificar como líder.
+    #Pl -- Número de jugadores que han driblado
+    Megs -- Número de veces que un jugador dribló el balón a través de las piernas de un jugador contrario.
+Transportes
+    Transportes -- El número de veces que el jugador controló el balón con sus pies.
+    Dist. tot. -- Distancia total, en yardas, que un jugador movió el balón mientras lo controlaba con sus pies, en cualquier dirección.
+    Dist. prg. -- Distancia progresiva
+        Distancia total, en yardas, que un jugador movió el balón mientras lo controlaba con sus pies hacia la meta del oponente.
+    Prog -- Carries that move the ball towards the opponent's goal at least 5 yards, or any carry into the penalty area. Excludes carries from the defending 40% of the pitch
+    1/3 -- Traslados que entran en el 1/3 del campo más cercano a la portería
+    TAP -- Traslados al área de 18 yardas
+    Errores de control -- El número de veces que un jugador falló al intentar ganar el control de un balón.
+    Des -- Número de veces que un jugador pierde el control del balón después de ser tackleado por un jugador contrario. No incluye los intentos de regate.
+Recepción
+    Blanco -- Número de veces que un jugador fue el blanco de un intento de pase.
+    Rec -- Número de veces que un jugador ha recibido un pase con éxito.
+    %deRec -- Porcentaje de pases recibidos
+        Porcentaje de tiempo que un jugador ha recibido un pase con éxito.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    Prog -- Pases progresivos recibidos
+        Pases completos que mueven el balón hacia la portería contraria al menos a 10 metros de su punto más lejano en los últimos seis pases, o pases completos al área de penalización. Excluye los pases del 40 % del campo de juego defensivo.
+
+-------------------------------------------------------
+Estadisticas Jugadores Tiempo de juego
+-------------------------------------------------------
+
+Tiempo Jugado
+    PJ -- Partidos jugados por el jugador o el equipo
+    Mn/PJ -- Minutos por partido jugado
+    % min -- Porcentaje de minutos jugados
+        Porcentaje de minutos totales del equipo en los que el jugador estuvo en el campo
+        Minutos jugados divididos por el total de minutos jugados por el equipo.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    90 s -- 90s jugados
+        Minutos jugados divididos por 90
+    Titular -- Partido o partidos iniciados por el jugador
+Titular
+    Mn/arranque -- Minutos por partido iniciado
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    Compl -- Partidos completos jugados
+Sup.
+    Sup -- Partidos como suplente
+        Partido o partidos que el jugador no jugó, también como suplente
+    Mn/Sust -- Minutos por sustitución
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    Partidos como sustituto -- Partidos sin jugar como sustituto
+Logros del equipo
+    PPP -- Puntos por partido
+        Promedio de puntos obtenidos por el equipo en los partidos en los que participó el jugador.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    onG -- Goles marcados por el equipo en el campo
+    onGA -- Goles permitidos por el equipo en el campo
+    +/- -- Más/Menos
+        Los goles marcados menos los goles permitidos por el equipo mientras el jugador estaba sobre el terreno de juego.
+    +/-90 -- Más/Menos por 90 minutos
+        Los goles marcados menos los goles permitidos por el equipo mientras el jugador estaba en el terreno de juego por cada 90 minutos jugados.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    Dentro-Fuera -- Más/Menos neto por 90 minutos
+        Goles netos por 90 minutos del equipo mientras el jugador estaba en el terreno de juego menos goles netos permitidos por 90 minutos 
+        por el equipo mientras el jugador estaba fuera del terreno de juego.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+Logros del equipo (xG)
+    onxG -- Goles esperados por equipo en el terreno de juego
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    onxGA -- Goles esperados permitidos por el equipo mientras está en el terreno de juego
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    xG+/- -- Más/Menos de xG
+        Los goles esperados anotados menos los goles esperados permitidos por el equipo mientras el jugador estaba sobre el terreno de juego.
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    xG+/-90 -- Más/Menos de xG por 90 minutos
+        Los goles esperados anotados menos los goles esperados permitidos por el equipo mientras el jugador estaba sobre el terreno de juego por cada 90 minutos jugados.
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    Dentro-Fuera -- Más/Menos de xG neto por 90 minutos
+        Los goles netos esperados por cada 90 minutos del equipo mientras el jugador estaba en el terreno de juego menos los goles netos esperados por cada 90 minutos del equipo mientras el jugador estaba fuera del terreno de juego.
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+
+-------------------------------------------------------
+Estadisticas Jugadores Tipos de pases
+-------------------------------------------------------
+
+Tiempo Jugado
+    90 s -- 90s jugados
+        Minutos jugados divididos por 90
+Totalº
+    Int. -- Pases intentados
+Tipos de pases
+    Balón vivo -- Pases de balón vivo
+    Balón muerto -- Pases de balón muerto
+        Incluye tiros libres, saques de esquina, saques de salida, saques de banda y saques de meta.
+    FK -- Pases intentados en tiros libres
+    PL -- Pases completo enviado entre los defensas hacia el espacio abierto.
+    Presión -- Los pases realizados bajo la presión del oponente
+    Camb. -- Pasos que recorren más de 40 yardas del ancho del campo.
+    Pcz -- Pases cruzados
+    SE -- Saques de esquina
+Saques de esquina
+    Dentro -- Saques de esquina hacia adentro
+    Fuera -- Saques de esquina hacia afuera
+    Rect. -- Saques de esquina rectos
+Altura
+    Suelo -- Pases al suelo
+    Bajos -- Pases que dejan el suelo, pero se mantienen por debajo del nivel de los hombros.
+    Altos -- Pases que están por encima del nivel de los hombros a la altura del punto más alto.
+Partes del cuerpo
+    Izquierda -- Pases intentados con el pie izquierdo
+    Derecha -- Pases intentados con el pie derecho
+    Cabeza -- Pases intentados con la cabeza
+    Lanz. -- Lanzamientos realizados
+    Otro -- Pases intentados usando partes del cuerpo que no sean la cabeza o los pies del jugador.
+Total
+    Cmp -- Pases completados
+Resultados
+    PA -- Posición adelantada
+    Fuera -- Fuera de los límites
+    Int -- Interceptado
+    Bloqueos -- Bloqueados por el oponente que estaba de pie en el camino.
+
+-------------------------------------------------------
+Estadisticas Jugadores Tiros
+-------------------------------------------------------
+
+Tiempo Jugado
+    90 s -- 90s jugados
+        Minutos jugados divididos por 90
+Rendimiento
+    Gls. -- Goles marcados o permitidos
+Estándar
+    Dis -- Total de disparos
+        No incluye los tiros penales
+    DaP -- Disparos a puerta
+        Nota: Los tiros al blanco no incluyen los penales.
+    % de TT -- Porcentaje de tiros a puerta
+        Se requiere un mínimo de 0,395 tiros por juego de equipo para calificar como líder.
+        Nota: Los tiros al blanco no incluyen los penales.
+    T/90 -- Tiros al arco cada 90 minutos
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+    TalArc/90 -- Disparos a puerta por 90 minutos
+        Se requiere un mínimo de 30 minutos jugados por partido de equipo para calificar como líder.
+        Nota: Los tiros al blanco no incluyen los penales.
+    G/T -- Goles por tiro
+        Se requiere un mínimo de 0,395 tiros por juego de equipo para calificar como líder.
+    G/TalArc -- Goles por tiros al arco
+        Se requiere un mínimo de 0,111 tiros al blanco por partido de equipo para calificar como líder.
+        Nota: Los tiros al blanco no incluyen los penales.
+    Dist -- Distancia promedio, en yardas, del total de disparos realizados hacia la portería
+        Se requiere un mínimo de 0,395 tiros por juego de equipo para calificar como líder.
+        No incluye los tiros penales
+    FK -- Tiros por falta
+Rendimiento
+    TP -- Tiros penales ejecutados
+    TPint -- Tiros penales intentados
+Expectativa
+    xG -- Goles esperados
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    npxG -- Goles esperados sin penalidad
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    npxG/Sh -- Goles esperados sin penalidad por cada tiro
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+        Se requiere un mínimo de 0,395 tiros por juego de equipo para calificar como líder.
+    G-xG -- Goles menos los goles esperados
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
+    np:G-xG -- Goles que no son de penalidad menos goles esperados que no son de penalidad
+        Los totales de xG incluyen los tiros desde el punto penal, pero no incluyen las tandas de penales (a menos que se indique lo contrario).
+        Proporcionado por StatsBomb.
+        Un subrayado indica que hay un partido que no contiene datos, pero que se actualizará cuando esté disponible.
